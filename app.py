@@ -21,3 +21,6 @@ print(today2)
 
 remain_date = func_module_as.remain_date()
 print(remain_date)
+
+re_date = func_module_as.remain_date_input()
+print(re_date)

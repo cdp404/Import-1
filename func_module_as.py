@@ -19,11 +19,13 @@ def remain_date():
 
 
 
-def remain_date_input(nmonth,nday):
+def remain_date_input(nmonth=12,nday=31):
     today = dt.datetime.now()
     xmas = dt.datetime(2020,nmonth,nday)
+    nmonth = int(input('원하는 달을 입력하세요 : '))
+    nday = int(input('원하는 일을 입력하세요 : '))
     return xmas-today
 
-nmonth = input('원하는 달을 입력하세요 : ')
-nday = input('원하는 일을 입력하세요 : ')
-print(remain_date_input(int(nmonth),int(nday)))
+# nmonth = input('원하는 달을 입력하세요 : ')
+# nday = input('원하는 일을 입력하세요 : ')
+# print(remain_date_input(int(nmonth),int(nday)))
